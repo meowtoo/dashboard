@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Plugin -->
+    <style>@import url(css/plugin/all.css);@import url(css/plugin/bootstrap.min.css);@import url(css/plugin/loader.css);@import url(css/plugin/animate.min.css);@import url(css/plugin/aos.css);</style>
+    <link rel="stylesheet" href="css/plugin/jquery.pagepiling.min.css">
+    <!-- Custpm CSS -->
+    <style>@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900);*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;cursor:none}body{font-family:'Poppins',sans-serif;color:#fff;line-height:1;height:100%;background-color:#f3f3f3;overflow-x:hidden;box-sizing:border-box}ul{list-style:none}.m-logo,.m-navbar-left,.m-navbar-right{display:none}a,a:hover{text-decoration:none}@-webkit-keyframes animated-mouse {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(6px);
+		-ms-transform: translateY(6px);
+		transform: translateY(6px);
+	}
+}@-webkit-keyframes mouse-scroll {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}@keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}.button_container{position:fixed;top:4%;right:5%;height:27px;width:35px;cursor:pointer;z-index:100;transition:opacity .25s ease}.button_container:hover{opacity:.7}.button_container .middle{width:50%;right:0}.button_container span{background:#fff;border:none;height:2px;width:100%;position:absolute;top:0;transition:all .35s ease;cursor:pointer}.button_container span:nth-of-type(2) {top:11px}.button_container span:nth-of-type(3) {top:22px}.overlay{z-index:11;position:fixed;background:#fff;top:0;left:0;width:100%;height:0%;opacity:0;visibility:hidden;transition:opacity .35s , visibility .35s , height .35s;overflow:hidden}.overlay.open li:nth-of-type(2) {-webkit-animation-delay:.4s;animation-delay:.4s}.overlay.open li:nth-of-type(3) {-webkit-animation-delay:.45s;animation-delay:.45s}.overlay.open li:nth-of-type(4) {-webkit-animation-delay:.50s;animation-delay:.50s}.overlay.open li:nth-of-type(5) {-webkit-animation-delay:.60s;animation-delay:.60s}.overlay.open li:nth-of-type(6) {-webkit-animation-delay:.70s;animation-delay:.70s}.overlay nav{position:relative;height:70%;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);font-size:50px;font-weight:900;text-align:center}.overlay ul{list-style:none;padding:0;margin:0 auto;display:inline-block;position:relative;height:100%}.overlay ul li{display:block;height:25%;height: calc(100% / 5);min-height:60px;position:relative;opacity:0}.overlay ul li a{position:relative;color:#111;text-decoration:none;overflow:hidden}.overlay ul li a:hover:after,.overlay ul li a:focus:after,.overlay ul li a:active:after{width:100%}.overlay ul li a:after{content:'';position:absolute;top:50%;left:50%;width:0%;-webkit-transform:translateX(-50%);transform:translateX(-50%);height:4px;background:#111;transition:.35s}@-webkit-keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }.cursor-dot,.cursor-dot-outline{z-index:999;pointer-events:none;position:absolute;top:50%;left:50%;border-radius:50%;opacity:0;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);transition:opacity .3s ease-in-out , -webkit-transform .3s ease-in-out;transition:opacity .3s ease-in-out , transform .3s ease-in-out;transition:opacity .3s ease-in-out , transform .3s ease-in-out , -webkit-transform .3s ease-in-out}.cursor-dot{width:8px;height:8px;background-color:#00f7ff}.cursor-dot-outline{width:40px;height:40px;background-color:rgba(12,161,166,.5)}.valign{display:table-cell;height:100%;vertical-align:middle}.table{position:absolute;display:table;width:100%;height:100%;z-index:3}.logo{position:fixed;top:4%;width:150px;height:30px;background:url(img/logo.png);left:5%;z-index:99;letter-spacing:26px}.logo a{color:transparent}.social{position:fixed;bottom:3%;right:5%;z-index:10}.social ul li{display:inline;margin:0 0 0 20px}.social ul li a{font-size:18px;color:#fff}@keyframes spin {
+	0% {
+		content: "creative";
+	}
+	10% {
+		content: "think";
+	}
+	20% {
+		content: "understand";
+	}
+	30% {
+		content: "listen";
+	}
+	40% {
+		content: "focus";
+	}
+	50% {
+		content: "fast";
+	}
+	60% {
+		content: "hardwork";
+	}
+	70% {
+		content: "idea";
+	}
+	80% {
+		content: "future";
+	}
+	90% {
+		content: "and";
+	}
+}.section{background:#161616;height:100%;width:100%}.layer{position:absolute!important;top:0;left:0;width:100%;height:100%}.bg-work-1{position:relative;height:100%;width:100%;background:url(img/works/1.jpg);background-attachment:fixed;background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-1{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-1.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.bg-work-2{position:relative;height:100%;width:100%;background:url(img/works/2.jpg);background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-2{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-2.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.bg-work-3{position:relative;height:100%;width:100%;background:url(img/works/3.jpg);background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-3{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-3.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.bg-work-4{position:relative;height:100%;width:100%;background:url(img/works/4.jpg);background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-4{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-4.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.bg-work-5{position:relative;height:100%;width:100%;background:url(img/works/5.jpg);background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-5{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-5.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.bg-work-6{position:relative;height:100%;width:100%;background:url(img/works/6.jpg);background-size:cover;background-repeat:no-repeat;background-position:center bottom}.img-obj-6{width:50%;height:50%;left:40%!important;top:30%!important;background-position:center center;background:url(img/works/obj-6.png);background-size:contain;background-repeat:no-repeat;background-position:center center}.title-work{opacity:0;transition:all ease-in-out 2s}.work-nav{position:absolute;width:200px;top:15%;right:5%;height:70%;z-index:99}.work-nav .item-menu{display:block;float:right;clear:both;letter-spacing:2.4px}.text{display:block;line-height:60px;font-size:12px;color:#fff;text-transform:uppercase;opacity:.3;-moz-transition:all .3s cubic-bezier(.42,0,0,.995);-o-transition:all .3s cubic-bezier(.42,0,0,.995);-webkit-transition:all .3s cubic-bezier(.42,0,0,.995);transition:all .3s cubic-bezier(.42,0,0,.995)}.item-menu.active .text{opacity:1;background:url(img/works/nav-active.png) no-repeat right center}#zoom-fade{position:absolute;margin-top:-60px;font-size:40px;font-weight:900;color:#d7a150;text-decoration:none;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-image:linear-gradient(to right,#00f7ff,#00f7ff 50%,#fff 50%);background-size:200% 100%;background-position:100%;-webkit-transition:all .3s cubic-bezier(0,0,.23,1);-o-transition:all .3s cubic-bezier(0,0,.23,1);-moz-transition:all .3s cubic-bezier(0,0,.23,1);transition:all .3s cubic-bezier(0,0,.23,1)}#zoom-fade:hover{background-position:0%}.sub{background:url(img/works/work-sub.png) no-repeat left center;padding-left:30px;background-size:contain;color:#fff;opacity:.7;font-weight:500;letter-spacing:1px}.title-work{position:absolute}.btn-detail{opacity:.5;position:absolute;font-size:12px;color:#fff;font-weight:400;font-style:italic;padding-right:130px;background:url(img/works/detail-to.png) no-repeat right center}.btn-detail:hover{opacity:1;-webkit-transition:all .3s cubic-bezier(0,0,.23,1);-o-transition:all .3s cubic-bezier(0,0,.23,1);-moz-transition:all .3s cubic-bezier(0,0,.23,1);transition:all .3s cubic-bezier(0,0,.23,1)}</style>
+    <!-- Responsive CSS -->
+    <style>@media only screen and (max-width:600px),(max-height:600px){.button_container{display:none}.logo{display:none}.m-logo{display:block;position:absolute;top:20px;left:50%;z-index:10;height:50px;margin-left:-20px}.m-navbar-left{display:block;position:absolute;top:35px;left:10%;z-index:10}.button_container{right:5%}.m-navbar-right{display:block;position:absolute;top:35px;right:10%;z-index:10}.m-navbar-left span,.m-navbar-right span{color:#fff;letter-spacing:1px;font-size:12px;font-weight:700}.social{text-align:right;width:100%;bottom:2px;right:10%}.social ul{padding:0}.social ul li a{font-size:14px}.row .col-md-8{position:unset}.title-work{position:absolute;width:90%;left:5%;bottom:15%;padding:30px;border:1px solid #fff;background:rgba(0,0,0,.5)}.work-nav{display:none}#zoom-fade,.btn-detail{position:relative}#zoom-fade{font-size:24px;margin:0}.sub{background:transparent;padding-left:0;margin:20px 0;font-size:14px;line-height:20px}.btn-detail{float:left}.work .social{display:none}.img-obj-1,.img-obj-2,.img-obj-3,.img-obj-4,.img-obj-5,.img-obj-6{width:70%;height:70%;left:15%!important;top:15%!important}.bottom-nav-m{position:fixed;z-index:11;bottom:20px;right:20px;color:#fff;font-size:12px;background:url(img/works/next-mobile.png) no-repeat left center;padding:10px 0 10px 25px}}@media (max-width:1199.98px){*,*:before,*:after{cursor:auto}.cursor-dot-outline{display:none}.cursor-dot{display:none}}</style>
+    <title>Project Meow | Home</title>
+    <link rel="icon" type="image" href="img/logo.png">
+  </head>
+  <body class="work">
+    <div id="loader"></div>
+
+    <!-- Side Navbar -->
+    <nav class="work-nav">
+        <div class="table">
+            <div class="valign">
+                <a class="item-menu active" data-menuanchor="firstPage" href="#firstPage">
+                    <span class="text">IoT Dashboard</span></a> 
+                <a class="item-menu" data-menuanchor="secondPage" href="#secondPage">
+                    <span class="text">Historic Data</span>
+                </a> 
+                <a class="item-menu" data-menuanchor="thirdPage" href="#thirdPage">
+                    <span class="text">Warning Entry</span>
+                </a> 
+                <a class="item-menu" data-menuanchor="fourthPage" href="#fourthPage">
+                    <span class="text">IFTTT Applets</span>
+                </a>
+                <a class="item-menu" data-menuanchor="fifthPage" href="#fifthPage">
+                    <span class="text">Security Key</span>
+                </a> 
+                <a class="item-menu" data-menuanchor="sixthPage" href="#sixthPage">
+                    <span class="text">Evaluation Form</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work List -->
+    <div class="pagepiling">
+        <!-- Work 01 -->
+        <div class="section work-1">
+            <div class="layer">
+                <!-- background -->
+                <div class="prx bg-work-1" id="--1">
+                    <!-- Work Image -->
+                    <div class="img-obj-1" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://create.arduino.cc/iot/dashboards/812fb829-7170-4ced-a5ad-e87a6e554e3d?mode=view" target="_blank">
+                            <h3 id="zoom-fade">Dashboard</h3>
+                            <p class="sub">Project Meow: Realt-time Dashboard</p>
+                            <h4 class="btn-detail">Proceed</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Work 02 -->
+        <div class="section work-2">
+            <div class="layer">
+                <!-- background -->
+                <div class="prx bg-work-2" id="--2" data-depth="0.10">
+                    <!-- work image -->
+                    <div class="img-obj-2" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://drive.google.com/drive/folders/13d6_nqXzhRqaju0JkFSJoCKh9awU1fwm?usp=sharing" target="_blank">
+                            <h3 id="zoom-fade">v2 Device</h3>
+                            <p class="sub">The All-Time Record Tracker</p>
+                            <h4 class="btn-detail">Proceed</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section work-3">
+            <div class="layer">
+                <div class="prx bg-work-3" id="--3">
+                        <div class="img-obj-3" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://drive.google.com/drive/folders/1ZPOZRrSo6-KonZLOc-hemawofwjxaTtK?usp=sharing" target="_blank">
+                            <h3 id="zoom-fade">v3 Tool</h3>
+                            <p class="sub">Status Report</p>
+                            <h4 class="btn-detail">Proceed</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section work-4">
+            <div class="layer">
+                <div class="prx bg-work-4" id="--4">
+                    <div class="img-obj-4" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://ifttt.com/my_applets" target="_blank">
+                            <h3 id="zoom-fade">My Applets</h3>
+                            <p class="sub">If This Then That: Integrations</p>
+                            <h4 class="btn-detail">Proceed</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section work-5">
+            <div class="layer">
+                <div class="prx bg-work-5" id="--5">
+                     <div class="img-obj-5" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://drive.google.com/drive/folders/1U0IMi8fkpjZq-bhBHLgESTtG0qe2w_2Z?usp=sharing" target="_blank">
+                            <h3 id="zoom-fade">Secret Key</h3>
+                            <p class="sub">Warning! Devices' Security Files</p>
+                            <h4 class="btn-detail">Handle Me, SAFELY</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section work-6">
+            <div class="layer">
+                <div class="prx bg-work-6" id="--6">
+                    <div class="img-obj-6" data-depth="0.20"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title-work animated fadeInUp delay-0.5s">
+                            <a href="https://forms.gle/R7rZupZnaXBghoADA" target="_blank">
+                            <h3 id="zoom-fade">Evaluation Form</h3>
+                            <p class="sub">Inside is the prototype evaluation form...</p>
+                            <h4 class="btn-detail">Take an Answer</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Social Media -->
+    <div class="social">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/marklesterpolicarpio.23" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/heylyn__" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/2chipatootee/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Bottom Navigation Mobile-->
+    <a class="bottom-nav-m">Navigate</a>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- Plugin JS -->
+    <script src="js/plugin-work.js"></script>
+    <script src="js/work.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('mushroom21', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Donate Me',
+            'floating-chat.donateButton.background-color': '#ffffff',
+            'floating-chat.donateButton.text-color': '#323842'
+        });
+    </script>
+    </body>
+</html><noscript class="psa_add_styles"><link rel="stylesheet" href="css/A.plugin.css.pagespeed.cf.n3IHVWgk53.css"><link rel="stylesheet" href="css/plugin/jquery.pagepiling.min.css"><link rel="stylesheet" href="css/A.style.css.pagespeed.cf.nvDwstjGt4.css"><link rel="stylesheet" href="css/A.responsive.css.pagespeed.cf.vxSpBDtSZ2.css"></noscript><script data-pagespeed-no-defer>(function(){function b(){var a=window,c=e;if(a.addEventListener)a.addEventListener("load",c,!1);else if(a.attachEvent)a.attachEvent("onload",c);else{var d=a.onload;a.onload=function(){c.call(this);d&&d.call(this)}}};var f=!1;function e(){if(!f){f=!0;for(var a=document.getElementsByClassName("psa_add_styles"),c=0,d;d=a[c];++c)if("NOSCRIPT"==d.nodeName){var k=document.createElement("div");k.innerHTML=d.textContent;document.body.appendChild(k)}}}function g(){var a=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||null;a?a(function(){window.setTimeout(e,0)}):b()}
+var h=["pagespeed","CriticalCssLoader","Run"],l=this;h[0]in l||!l.execScript||l.execScript("var "+h[0]);for(var m;h.length&&(m=h.shift());)h.length||void 0===g?l[m]?l=l[m]:l=l[m]={}:l[m]=g;})();
+pagespeed.CriticalCssLoader.Run();</script>
